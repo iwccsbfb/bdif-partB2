@@ -21,7 +21,7 @@ struct inside_circle {
 private:
 	__device__
 	unsigned int inside(float2 p) const {
-		return (((p.x-0.5)*(p.x-0.5)+(p.y-0.5)*(p.y-0.5))<0.25) ? 1 : 1;
+		return (((p.x-0.5)*(p.x-0.5)+(p.y-0.5)*(p.y-0.5))<0.25) ? 1 : 0;
 	}
 public:
 	// Used for-on-the fly.
