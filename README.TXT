@@ -25,3 +25,11 @@ These may also be useful commands:
 And a hint to help you on your way. Remember that every GPU program has
 two parts: a CPU part and a GPU part. To run this example you will have
 to engage, at a minimum, at least 1 CPU and at least 1 GPU.
+
+what I have done:
+1. modify cuda-thrust.cu and correct the grammar errors.
+2. in makefile, replace space with tab in third and 6th line.
+3. in cuda-thrust.pbs
+change ./cuda-thrust -> ./cuda-thrust > result.txt
+change ncpus=0 --> ncpus=1
+
