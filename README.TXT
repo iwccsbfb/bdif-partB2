@@ -28,6 +28,9 @@ to engage, at a minimum, at least 1 CPU and at least 1 GPU.
 
 what I have done:
 1. modify cuda-thrust.cu and correct the grammar errors.
+
+		return (((p.x-0.5)*(p.x-0.5)+(p.y-0.5)*(p.y-0.5))<0.25) ? 1 : 0;
+		
 2. in makefile, replace space with tab in third and 6th line.
 3. in cuda-thrust.pbs
 change ./cuda-thrust -> ./cuda-thrust > result.txt
